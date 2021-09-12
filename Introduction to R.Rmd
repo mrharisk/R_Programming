@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
+author: "Muhammad Haris Khan"
 date: "May 14, 2020"
 output: html_document
 ---
@@ -23,53 +23,49 @@ output: html_document
 
 
 ```{r }
-#### Start solution ####
+my_name <- c("M","u","h","a","m","m","a","d", "H","a","r","i","s", "K","h","a","n")
 ```
 
 
 ```{r }
-
+my_name_concatenated = paste(my_name, collapse = "")
 ```
 
 
 ```{r }
-
+a_sequence <- 100:120
 ```
 
 
 ```{r }
-
+even <- matrix(1:9 * 2, nrow = 3, ncol = 3)
 ```
 
 
 ```{r }
-
-```
-
-
-```{r }
-#### End solution ####
+row.names(even) <- c("A","B","C")
+colnames(even) <- c("X","Y","Z")
 ```
 
 ### Question 2
 **Create a factor variable emp_status:**  
-1. Containing the categorical variables: Employed, Unemployed, Self-Employed, with each level appearing atleast more than 2.  
+1. Containing the categorical variables: Employed, Unemployed, Self-Employed, with each level appearing at least more than 2.  
 2. Display the levels and the factor variable as a table.  
 3. Unclass the elements of the factor variable.  
 
 
 ```{r }
-#### Start solution ####
+f <- factor(c("Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed"))
 ```
 
 
 ```{r }
-
+f
 ```
 
 
 ```{r }
-
+unclass(f)
 ```
 
 
