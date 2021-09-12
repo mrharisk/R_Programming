@@ -23,28 +23,33 @@ output: html_document
 
 
 ```{r }
-my_name <- c("M","u","h","a","m","m","a","d", "H","a","r","i","s", "K","h","a","n")
+my_name <- c("M","u","h","a","m","m","a","d", "H","a","r","i","s")
+my_name
 ```
 
 
 ```{r }
 my_name_concatenated = paste(my_name, collapse = "")
+my_name_concatenated
 ```
 
 
 ```{r }
 a_sequence <- 100:120
+a_sequence
 ```
 
 
 ```{r }
 even <- matrix(1:9 * 2, nrow = 3, ncol = 3)
+even
 ```
 
 
 ```{r }
 row.names(even) <- c("A","B","C")
 colnames(even) <- c("X","Y","Z")
+even
 ```
 
 ### Question 2
@@ -55,27 +60,18 @@ colnames(even) <- c("X","Y","Z")
 
 
 ```{r }
-f <- factor(c("Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed"))
+emp_status <- factor(c("Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed","Employed","Unemployed","Self-Employed"))
+emp_status
 ```
 
 
 ```{r }
-f
+table(emp_status)
 ```
 
 
 ```{r }
-unclass(f)
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-#### End solution ####
+unclass(emp_status)
 ```
 
 ### Question 3
@@ -92,22 +88,23 @@ unclass(f)
 
 
 ```{r }
-#### Start solution ####
+bank_customers <- data.frame(CustomerID = c("Alicia","Nancy","Fernando","Louis","Diane"), HasAccount = c("No","Yes","Yes","Yes","No"), TotalBalance =c("NA",10000,"NA",2000,"NA"))
+bank_customers
 ```
 
 
 ```{r }
-
+nrow(bank_customers)
 ```
 
 
 ```{r }
-
+ncol(bank_customers)
 ```
 
 
 ```{r }
-
+names(bank_customers)
 ```
 
 
