@@ -21,6 +21,10 @@ output: html_document
 4. Create a matrix of 3x3 dimensions that contains the even sequence of numbers starting from 2.  
 5. Assign names to the variables.  
 
+```{r }
+#### Start solution ####
+```
+
 
 ```{r }
 my_name <- c("M","u","h","a","m","m","a","d", "H","a","r","i","s")
@@ -52,11 +56,20 @@ colnames(even) <- c("X","Y","Z")
 even
 ```
 
+
+```{r }
+#### End solution ####
+```
+
 ### Question 2
 **Create a factor variable emp_status:**  
 1. Containing the categorical variables: Employed, Unemployed, Self-Employed, with each level appearing at least more than 2.  
 2. Display the levels and the factor variable as a table.  
 3. Unclass the elements of the factor variable.  
+
+```{r }
+#### Start solution ####
+```
 
 
 ```{r }
@@ -74,6 +87,11 @@ table(emp_status)
 unclass(emp_status)
 ```
 
+
+```{r }
+#### End solution ####
+```
+
 ### Question 3
 **Create a dataframe object called bank_customers:**  
 1. the data frame will have three columns: CustomerID, hasAccount, totalBalance  
@@ -86,9 +104,15 @@ unclass(emp_status)
 3. For customers that do not have a value, use NA as placeholder.  
 4. Print the number of rows, columns and names for the data frame.  
 
+```{r }
+#### Start solution ####
+```
+
 
 ```{r }
-bank_customers <- data.frame(CustomerID = c("Alicia","Nancy","Fernando","Louis","Diane"), HasAccount = c("No","Yes","Yes","Yes","No"), TotalBalance =c("NA",10000,"NA",2000,"NA"))
+bank_customers <- data.frame(CustomerID = c("Alicia","Nancy","Fernando","Louis","Diane"),
+                            HasAccount = c("No","Yes","Yes","Yes","No"),
+                            TotalBalance =c("NA",10000,"NA",2000,"NA"))
 bank_customers
 ```
 
@@ -105,11 +129,6 @@ ncol(bank_customers)
 
 ```{r }
 names(bank_customers)
-```
-
-
-```{r }
-
 ```
 
 
