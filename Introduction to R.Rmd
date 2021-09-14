@@ -157,13 +157,26 @@ names(bank_customers)
 
 
 ```{r }
-sequence_numbers <- seq(1:100)
+sequence_numbers <- 1:100
 sequence_numbers
 ```
 
 
 ```{r }
-
+for (j in 2:100) {
+    f = 1
+    i = 2
+    n = j
+    while (i <= n / 2) {
+      if (n %% i == 0) {
+        f = 0
+      }
+      i = i + 1
+    }
+    if (f == 1) {
+      print(paste(n))
+  }
+}
 ```
 
 
