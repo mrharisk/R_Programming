@@ -163,19 +163,7 @@ sequence_numbers
 
 
 ```{r }
-for (i in 2:100) {
-    f = 1
-    j = 2
-    while (j <= i / 2) {
-      if (i %% j == 0) {
-        f = 0
-      }
-      j = j + 1
-    }
-    if (f == 1) {
-      print(paste(i))
-  }
-}
+
 ```
 
 
