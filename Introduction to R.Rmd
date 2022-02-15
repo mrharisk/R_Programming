@@ -168,7 +168,7 @@ sequence_numbers
 
 
 ```{r }
-var <- 1
+
 ```
 
 
